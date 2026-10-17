@@ -2,7 +2,7 @@ import Image from "next/image";
 import type { MediaItem } from "@/data/media";
 import { AmbientVideo } from "./AmbientVideo";
 
-// Moldura de imagem/vídeo com etiqueta de transparência ("Imagem ilustrativa", etc.).
+// Moldura de imagem/vídeo, com etiqueta opcional.
 export function Media({ item, sizes = "100vw", priority = false, className = "", showLabel = true }: { item: MediaItem; sizes?: string; priority?: boolean; className?: string; showLabel?: boolean }) {
   return (
     <div className={`relative overflow-hidden bg-bruma ${className}`}>

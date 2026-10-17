@@ -12,7 +12,6 @@ export function Cabecalho({ p }: { p: Project }) {
           {kindLabel[p.kind]} · {p.status}
           {p.location ? ` · ${p.location}` : ""}
         </p>
-        {p.isDemo && <p className="mt-4 inline-block border border-areia-escura px-3 py-1 text-sm text-areia-escura">Conteúdo demonstrativo, não é um trabalho real da CS Group.</p>}
       </div>
       <div className="mx-auto mt-8 max-w-site px-5 sm:px-6 md:mt-10"><Media item={p.cover} className="aspect-[4/3] sm:aspect-[21/9]" priority /></div>
     </>

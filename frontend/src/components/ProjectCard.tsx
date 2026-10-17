@@ -11,7 +11,6 @@ export function ProjectCard({ project }: { project: Project }) {
         <p className="mt-1 text-sm text-mineral">
           {kindLabel[project.kind]}
           {project.location ? ` · ${project.location}` : ""}
-          {project.isDemo ? " · Demonstrativo" : ""}
         </p>
       </Link>
     </article>
