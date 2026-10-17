@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Esconde o botão de play nativo do iOS/Safari no vídeo de fundo */
+.ambient-video::-webkit-media-controls,
+.ambient-video::-webkit-media-controls-start-playback-button,
+.ambient-video::-webkit-media-controls-overlay-play-button,
+.ambient-video::-webkit-media-controls-panel {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
 @layer base {
   html { scroll-behavior: smooth; }
   body { @apply bg-osso font-sans text-carvao antialiased; }
